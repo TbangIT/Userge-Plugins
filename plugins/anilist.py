@@ -556,7 +556,7 @@ async def trace_bek(message: Message):
         file_name=Config.DOWN_PATH,
         progress=progress,
         progress_args=(message, "Downloading Media")
-    )
+    
     dls_loc = os.path.join(Config.DOWN_PATH, os.path.basename(dls))
     if replied.animation or replied.video:
         img_loc = os.path.join(Config.DOWN_PATH, "trace.png")
